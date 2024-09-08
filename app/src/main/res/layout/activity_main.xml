@@ -1,0 +1,39 @@
+<!-- app/src/main/res/layout/activity_main.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTextItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Adicione um item" />
+
+    <Button
+        android:id="@+id/buttonAddItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Adicionar Item" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/buttonClearList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Limpar Lista" />
+
+    <Button
+        android:id="@+id/buttonShareList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Compartilhar Lista"
+        android:layout_marginTop="8dp"/>
+</LinearLayout>
